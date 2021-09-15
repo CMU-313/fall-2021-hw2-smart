@@ -101,6 +101,14 @@ hr {
     list-style-type:none;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: darkblue;
+}
+
 a i {
     padding-right: 3px;
 }
