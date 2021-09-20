@@ -26,7 +26,7 @@ class DocumentReviewsApp(MayanAppConfig):
     app_namespace = 'reviews'
     app_url = 'reviews'
     has_rest_api = True
-    has_tests = True
+    has_tests = False
     name = 'mayan.apps.document_reviews'
     verbose_name = _('Document reviews')
 
