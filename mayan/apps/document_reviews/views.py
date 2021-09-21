@@ -23,7 +23,7 @@ class DocumentReviewCreateView(ExternalObjectViewMixin, SingleObjectCreateView):
     external_object_permission = permission_document_review_create
     external_object_pk_url_kwarg = 'document_id'
     external_object_queryset = Document.valid
-    fields = ('text',)
+    fields = ('addlcomments',)
 
     def get_extra_context(self):
         return {
@@ -97,7 +97,7 @@ class DocumentReviewDetailView(SingleObjectDetailView):
 
 
 class DocumentReviewEditView(SingleObjectEditView):
-    fields = ('text',)
+    fields = ('addlcomments',)
     pk_url_kwarg = 'review_id'
     object_permission = permission_document_review_edit
 
@@ -141,8 +141,7 @@ class DocumentReviewListView(ExternalObjectViewMixin, SingleObjectListView):
                 RequestContext(self.request, {'object': self.external_object})
             ),
             'no_results_text': _(
-                'Document reviews are timestamped text entries from users. '
-                'They are great for collaboration.'
+                'Document reviews score a student based on different factors.'
             ),
             'no_results_title': _('There are no reviews'),
             'object': self.external_object,

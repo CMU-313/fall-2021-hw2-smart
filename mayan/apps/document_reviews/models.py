@@ -32,7 +32,7 @@ class Review(models.Model):
         editable=False, on_delete=models.CASCADE, related_name='reviews',
         to=settings.AUTH_USER_MODEL, verbose_name=_('User'),
     )
-    text = models.TextField(verbose_name=_('Text'))
+    addlcomments = models.TextField(verbose_name=_('Additional Comments'))
     submit_date = models.DateTimeField(
         auto_now_add=True, db_index=True,
         verbose_name=_('Date time submitted')
@@ -45,7 +45,7 @@ class Review(models.Model):
         verbose_name_plural = _('Reviews')
 
     def __str__(self):
-        return self.text
+        return self.addlcomments
 
     @method_event(
         event_manager_class=EventManagerMethodAfter,

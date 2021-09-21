@@ -8,7 +8,7 @@ from .models import Review
 class DocumentReviewDetailForm(DetailForm):
 
     class Meta:
-        fields = ('text',)
+        fields = ('addlcomments',)
         extra_fields = (
             {'field': 'submit_date', 'widget': forms.widgets.DateTimeInput},
             {'field': 'user'},
