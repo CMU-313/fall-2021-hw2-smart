@@ -76,7 +76,7 @@ class DocumentReviewsApp(MayanAppConfig):
             attribute='get_user_label', is_sortable=True,
             include_label=True, sort_field='user', source=Review
         )
-        SourceColumn(attribute='text', include_label=True, source=Review)
+        SourceColumn(attribute='addlcomments', include_label=True, source=Review)
 
         menu_facet.bind_links(
             links=(link_reviews_for_document,), sources=(Document,)
