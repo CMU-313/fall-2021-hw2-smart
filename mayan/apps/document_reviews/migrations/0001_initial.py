@@ -21,6 +21,51 @@ class Migration(migrations.Migration):
                     )
                 ),
                 (
+                    'firstName', models.CharField(
+                        verbose_name='First Name'
+                    )
+                ),
+                (
+                    'lastName', models.CharField(
+                        verbose_name='Last Name'
+                    )
+                ),
+                (
+                    'gradYear', models.CharField(
+                        verbose_name='Graduation Year'
+                    )
+                ),
+                (
+                    'fieldOfStudy', models.CharField(
+                        verbose_name='Field of Study'
+                    )
+                ),
+                (
+                    'gpaScale', models.IntegerField(
+                        verbose_name='GPA: Rate 1-10'
+                    )
+                ),
+                (
+                    'technicalScale', models.IntegerField(
+                        verbose_name='Technical Skills: Rate 1-10'
+                    )
+                ),
+                (
+                    'communicationScale', models.IntegerField(
+                        verbose_name='Communication Skills: Rate 1-10'
+                    )
+                ),
+                (
+                    'experienceScale', models.IntegerField(
+                        verbose_name='Experience: Rate 1-10'
+                    )
+                ),
+                (
+                    'addlcomments', models.TextField(
+                        verbose_name='Additional Comments'
+                    )
+                ),
+                (
                     'addlcomments', models.TextField(
                         verbose_name='Additional Comments'
                     )

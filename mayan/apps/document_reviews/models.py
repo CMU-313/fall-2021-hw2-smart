@@ -57,7 +57,7 @@ class Review(models.Model):
         verbose_name_plural = _('Reviews')
 
     def __str__(self):
-        return self.addlcomments
+        return self.firstName + self.lastName
 
     @method_event(
         event_manager_class=EventManagerMethodAfter,
