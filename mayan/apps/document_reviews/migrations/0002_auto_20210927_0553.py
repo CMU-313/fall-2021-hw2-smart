@@ -10,10 +10,11 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AlterField(
+        migrations.AddField(
             model_name='review',
             name='fieldOfStudy',
-            field=models.CharField(max_length=48, verbose_name='Field of Study'),
+            field=models.CharField(max_length=48, verbose_name='Field of Study', null=True),
+            
         ),
         migrations.AlterField(
             model_name='review',
