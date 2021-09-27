@@ -15,7 +15,10 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         fields = (
-            'document', 'document_reviews_url', 'id', 'submit_date', 'firstName', 'lastName', 'gradYear', 'fieldOfStudy', 'gpaScale', 'technicalScale', 'communicationScale', 'experienceScale', 'addlcomments', 'addlreviews', 'url', 'user'
+            'document', 'document_reviews_url', 'id', 'submit_date', 
+            'firstName', 'lastName', 'gradYear', 'fieldOfStudy', 
+            'gpaScale', 'technicalScale', 'communicationScale', 'experienceScale', 
+            'addlcomments', 'url', 'user'
         )
         model = Review
 
@@ -43,7 +46,10 @@ class WritableReviewSerializer(serializers.ModelSerializer):
 
     class Meta:
         fields = (
-            'document', 'document_reviews_url', 'id', 'submit_date', 'firstName', 'lastName', 'gradYear', 'fieldOfStudy', 'gpaScale', 'technicalScale', 'communicationScale', 'experienceScale', 'addlcomments', 'addlreviews', 'url', 'user'
+            'document', 'document_reviews_url', 'id', 'submit_date', 
+            'firstName', 'lastName', 'gradYear', 'fieldOfStudy', 
+            'gpaScale', 'technicalScale', 'communicationScale', 'experienceScale', 
+            'addlcomments', 'url', 'user'
         )
         model = Review
         read_only_fields = ('document',)
