@@ -97,7 +97,7 @@ class DocumentReviewDetailView(SingleObjectDetailView):
 
 
 class DocumentReviewEditView(SingleObjectEditView):
-    fields = ('addlcomments',)
+    fields = ('firstName', 'lastName', 'gradYear', 'fieldOfStudy', 'gpaScale', 'technicalScale', 'communicationScale', 'experienceScale', 'addlcomments')
     pk_url_kwarg = 'review_id'
     object_permission = permission_document_review_edit
 
