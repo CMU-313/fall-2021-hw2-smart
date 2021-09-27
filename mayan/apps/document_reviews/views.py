@@ -23,7 +23,7 @@ class DocumentReviewCreateView(ExternalObjectViewMixin, SingleObjectCreateView):
     external_object_permission = permission_document_review_create
     external_object_pk_url_kwarg = 'document_id'
     external_object_queryset = Document.valid
-    fields = ('addlcomments',)
+    fields = ('firstName', 'lastName', 'gradYear', 'fieldOfStudy', 'gpaScale', 'technicalScale', 'communicationScale', 'experienceScale', 'addlcomments')
 
     def get_extra_context(self):
         return {
