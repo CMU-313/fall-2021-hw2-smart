@@ -28,6 +28,9 @@
 [support-url]: https://www.mayan-edms.com/support/
 
 <div align="center">
+  <p>
+    Hello 17-313 TAs, the manual test script can be found in mayan/apps/document_reviews. 
+  </p>
   <a href="http://www.mayan-edms.com">
     <img width="200" heigth="200" src="https://gitlab.com/mayan-edms/mayan-edms/raw/master/docs/_static/mayan_logo.png">
   </a>
