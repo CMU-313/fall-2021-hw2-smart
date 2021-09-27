@@ -32,7 +32,19 @@ class Review(models.Model):
         editable=False, on_delete=models.CASCADE, related_name='reviews',
         to=settings.AUTH_USER_MODEL, verbose_name=_('User'),
     )
+
+    firstName = models.CharField(verbose_name=_('First Name'), max_length=48)
+    lastName = models.CharField(verbose_name=_('Last Name'), max_length=48)
+    gradYear = models.CharField(verbose_name=_('Graduation Year'), max_length=48)
+    fieldOfStudy = models.CharField(verbose_name=_('Field of Study'), max_length=48)
+
+    gpaScale = models.IntegerField(verbose_name=_('GPA: Rate 1-10'))
+    technicalScale = models.IntegerField(verbose_name=_('Technical Skills: Rate 1-10'))
+    communicationScale = models.IntegerField(verbose_name=_('Communication Skills: Rate 1-10'))
+    experienceScale = models.IntegerField(verbose_name=_('Experience: Rate 1-10'))
+    
     addlcomments = models.TextField(verbose_name=_('Additional Comments'))
+
     submit_date = models.DateTimeField(
         auto_now_add=True, db_index=True,
         verbose_name=_('Date time submitted')
