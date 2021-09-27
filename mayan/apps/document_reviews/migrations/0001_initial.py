@@ -66,11 +66,6 @@ class Migration(migrations.Migration):
                     )
                 ),
                 (
-                    'addlcomments', models.TextField(
-                        verbose_name='Additional Comments'
-                    )
-                ),
-                (
                     'submit_date', models.DateTimeField(
                         auto_now_add=True,
                         verbose_name='Date time submitted', db_index=True
