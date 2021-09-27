@@ -40,7 +40,3 @@ api_urls = [
         name='comment-detail', view=APICommentView.as_view()
     ),
 ]
-
-urlpatterns += [
-    path('form/<uuid:pk>/new/', views.new_form, name='new_form'),
-]
