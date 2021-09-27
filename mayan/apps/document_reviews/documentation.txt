@@ -1,7 +1,12 @@
 Documentation:
-Our feature implements creating a form to review resumes. Users can fill out multiple forms and view, edit, and delete them after saving. We implemented this by adding an additional field to the sidebar in the document view called “Review”. We added the following fields to our form: first name, last name, graduation year, field of study, and various relevant skill scales. We felt these would be an accurate and thorough representation of a resume. 
+
+Our feature implements creating a form to review resumes. Users can fill out multiple forms and view, edit, and delete them after saving. 
+We implemented this by adding an additional field to the sidebar in the document view called “Review”. We added the following fields to our form: 
+first name, last name, graduation year, field of study, and various relevant skill scales. We felt these would be an accurate and thorough 
+representation of a resume. 
 
 Manual Test Script:
+
 To Create a Form:
 Upload a document to Mayan
 Go into the document preview page
