@@ -20,6 +20,7 @@ class Migration(migrations.Migration):
                         primary_key=True
                     )
                 ),
+                
                 (
                     'addlcomments', models.TextField(
                         verbose_name='Additional Comments'
